@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Free Fire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="login-screen">
+    <div class="login-box">
+        <h2>Đăng Nhập</h2>
+        <p>Admin sinh tháng mấy?</p>
+        <input type="password" id="admin-answer" placeholder="Nhập câu trả lời...">
+        <button id="login-btn">Vào Menu</button>
+        <p id="error-msg"></p>
+    </div>
+</div>
+
+<div id="menu-screen" class="hidden">
+    <div class="sidebar">
+        <button class="menu-btn" onclick="showSection('aimbot')">Aimbot</button>
+        <button class="menu-btn" onclick="showSection('sens')">Sensitivity</button>
+        <button class="menu-btn" onclick="showSection('nhay')">Nhạy</button>
+        <button class="menu-btn" onclick="showSection('buff')">Buff Màn</button>
+        <button class="menu-btn" onclick="showSection('fps')">Tăng FPS</button>
+        <button class="menu-btn open-ff" onclick="openFF()">Mở Free Fire</button>
+    </div>
+
+<div id="aimbot" class="panel hidden">
+    <label><input type="checkbox" class="toggle"> AIMLOCK</label>
+    <label><input type="checkbox" class="toggle"> AIM UMP</label>
+    <label><input type="checkbox" class="toggle"> AIM M1887</label>
+    <label><input type="checkbox" class="toggle"> AIM MP40</label>
+</div>
+
+<div id="sens" class="panel hidden">
+    <label><input type="checkbox" class="toggle"> NHẠY GAME</label>
+    <label><input type="checkbox" class="toggle"> NHẠY X2</label>
+    <label><input type="checkbox" class="toggle"> BUFF FPS GAME</label>
+</div>
+
+<div id="nhay" class="panel hidden">
+    <label><input type="checkbox" class="toggle"> Nhạy Kéo Tâm Mượt</label>
+</div>
+
+<div id="buff" class="panel hidden">
+    <label><input type="checkbox" class="toggle"> Buff Màn 100%</label>
+</div>
+
+<div id="fps" class="panel hidden">
+    <label><input type="checkbox" class="toggle"> Tăng FPS 90-120Hz</label>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
